@@ -36,7 +36,7 @@
 <body>
     <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
 
-    <nav class="indigo">
+    <nav class="blue">
     <div class="nav-wrapper">
         <a href="#" data-activates="main-menu" class="button-collapse">
             <i class="fa fa-navicon"></i>
@@ -82,7 +82,7 @@
                 
             </ul>
             <div>
-    <ul class="side-nav indigo darken-1" id="main-menu">
+    <ul class="side-nav blue darken-1" id="main-menu">
         
         <li class="side-user">
             <div class="row">
@@ -91,8 +91,8 @@
                 </div>
                 <div class="info col s8 valign-wrapper no-padding">
                     <div class="valign">
-                        <p class="name">你的大名</p>
-                        <p class="desc">Web前端/iOS/技术宅</p>
+                        <p class="name"></p>
+                        <p class="desc">宅,但不是死宅</p>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
         
     </ul>
 
-    <ul class="side-nav indigo darken-1" id="category-menu">
+    <ul class="side-nav blue darken-1" id="category-menu">
         <!--<li class="">
             <h5 class="black-text">分类目录</h5>
         </li>-->
@@ -163,15 +163,15 @@
                 <ul class="tabs ">
                     
                         <li class="tab col s4 ">
-                            <a class="pink-text " href="#readed">已读(3)</a>
+                            <a class="green-text " href="#readed">已读(3)</a>
                         </li>
                     
                         <li class="tab col s4 ">
-                            <a class="pink-text " href="#reading">在读(1)</a>
+                            <a class="green-text " href="#reading">在读(1)</a>
                         </li>
                     
                         <li class="tab col s4 ">
-                            <a class="pink-text " href="#wanted">想读(1)</a>
+                            <a class="green-text " href="#wanted">想读(1)</a>
                         </li>
                     
                 </ul>
@@ -186,7 +186,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s23139051.jpg">
                                 </div>
-                                <div class="card-content pink-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">众妙之门：网站UI设计之道
                                     </span>
                                     <p>评分：7
@@ -213,7 +213,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img5.douban.com/lpic/s11337059.jpg">
                                 </div>
-                                <div class="card-content pink-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">JavaScript模式
                                     </span>
                                     <p>评分：8.5
@@ -240,7 +240,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s11373174.jpg">
                                 </div>
-                                <div class="card-content pink-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">JavaScript语言精粹
                                     </span>
                                     <p>评分：9.5
@@ -272,7 +272,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s27881888.jpg">
                                 </div>
-                                <div class="card-content pink-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">网络游戏核心技术与实战
                                     </span>
                                     <p>评分：暂无
@@ -304,7 +304,7 @@
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s1113106.jpg">
                                 </div>
-                                <div class="card-content pink-link-context">
+                                <div class="card-content orange-link-context">
                                     <span class="card-title truncate activator grey-text text-darken-4">计算机程序的构造和解释
                                     </span>
                                     <p>评分：暂无
@@ -333,22 +333,49 @@
         
 
 
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="reading/index.html" data-title="读书" data-url="http://lixy.space/reading/index.html"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'ture'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
 
     
 </div>
 
         <div class="fixed-action-btn float-sitemap">
-    <a class="btn-floating btn-large pink">
+    <a class="btn-floating btn-large green">
       <i class="fa fa-caret-square-o-up"></i>
     </a>
     <ul>
-      <li><a class="btn-return-top btn-floating waves-effect green" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
-      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
+      <li><a class="btn-return-top btn-floating waves-effect blue" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse orange"  data-activates="main-menu" title="Menu"><i class="fa fa-navicon"></i></a></li>
     </ul>
   </div>
 
     </main>
-    <footer class="page-footer indigo darken-1">
+    <footer class="page-footer blue darken-1">
     
     <div class="container">
         <div class="row">
@@ -356,16 +383,12 @@
             <div class="social-group col m3 s12">
                 <h5 class="white-text">社交</h5>
                 
-                    <a class="social-link" href="http://weibo.com/1956184117" target="_blank">
+                    <a class="social-link" href="http://weibo.com/u/3508980053" target="_blank">
                         <i class="fa fa-2x fa-weibo"></i>
                     </a>
                 
-                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">
+                    <a class="social-link" href="https://github.com/suti" target="_blank">
                         <i class="fa fa-2x fa-github"></i>
-                    </a>
-                
-                    <a class="social-link" href="/atom.xml" target="_blank">
-                        <i class="fa fa-2x fa-rss"></i>
                     </a>
                 
             </div>
@@ -375,9 +398,9 @@
             <div class="col m9 s12">
                 <h5 class="white-text">友情链接</h5>
                 
-                    <a class="social-link" href="http://raytaylorlin.com/" target="_blank">raytaylorism主题作者的技术博客</a>
+                    <a class="social-link" href="http://fefine.xyz/" target="_blank">Fefine</a>
                 
-                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">Github地址（测试友情链接）</a>
+                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">raytaylorlin</a>
                 
             </div>
             
@@ -385,9 +408,9 @@
     </div>
     
 
-    <div class="footer-copyright pink-link-context">
+    <div class="footer-copyright orange-link-context">
         <div class="container">
-            © 2016 example.com, All rights reserved.
+            © 2016 www.lixy.space, All rights reserved.
             <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
         </div>
     </div>
@@ -464,7 +487,7 @@
         $('li.tab a').hover(function() {
             $(this).toggleClass('text-lighten-4');
         });
-        $('.indicator').addClass('pink lighten-2');
+        $('.indicator').addClass('green lighten-2');
 
         
         // 添加new标签
