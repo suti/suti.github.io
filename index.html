@@ -1,473 +1,867 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-    
 
-    <title>lixy.space</title>
-    <meta name="author" content="lixy">
-    
-    
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
-    <meta property="og:site_name" content="lixy.space"/>
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-    
-    <meta property="og:image" content="undefined"/>
-    
 
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="alternate" href="/atom.xml" title="lixy.space" type="application/atom+xml">
-    <link rel="stylesheet" href="/css/lib/materialize.min.css">
-    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 
-    
-        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
-    
-    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lixy.space">
+<meta property="og:url" content="http://lixy.space/index.html">
+<meta property="og:site_name" content="lixy.space">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lixy.space">
+<meta name="twitter:description">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"hide"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 6266718307542369000,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> lixy.space </title>
 </head>
 
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-<body>
-    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+  
 
-    <nav class="blue">
-    <div class="nav-wrapper">
-        <a href="#" data-activates="main-menu" class="button-collapse">
-            <i class="fa fa-navicon"></i>
-        </a>
-        <div class="">
-            <a href="/" class="brand-logo hide-on-med-and-down">lixy.space</a>
-            <ul class="right hide-on-med-and-down">
-                
-                    <li>
-                        <a class="menu-home " href="/" >
-                            <i class="fa fa-home "></i>
-                            首页
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-archive " href="/archives" >
-                            <i class="fa fa-archive "></i>
-                            归档
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
-                            <i class="fa fa-bookmark "></i>
-                            分类
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-reading " href="/reading" >
-                            <i class="fa fa-book "></i>
-                            读书
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a class="menu-about " href="/about" >
-                            <i class="fa fa-user "></i>
-                            关于
-                        </a>
-                    </li>
-                
-            </ul>
-            <div>
-    <ul class="side-nav blue darken-1" id="main-menu">
-        
-        <li class="side-user">
-            <div class="row">
-                <div class="col s4 no-padding">
-                    <img class="avatar-image circle responsive-img" src="https://avatars3.githubusercontent.com/u/11472339?v=3&amp;s=460" alt="User Avatar">
-                </div>
-                <div class="info col s8 valign-wrapper no-padding">
-                    <div class="valign">
-                        <p class="name"></p>
-                        <p class="desc">宅,但不是死宅</p>
-                    </div>
-                </div>
-            </div>
-        </li>
-        
 
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-home " href="/" >
-                    <i class="fa fa-home "></i>
-                    首页
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-archive " href="/archives" >
-                    <i class="fa fa-archive "></i>
-                    归档
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
-                    <i class="fa fa-bookmark "></i>
-                    分类
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-reading " href="/reading" >
-                    <i class="fa fa-book "></i>
-                    读书
-                </a>
-            </li>
-        
-            <li class="no-padding">
-                <a class="waves-effect menu-about " href="/about" >
-                    <i class="fa fa-user "></i>
-                    关于
-                </a>
-            </li>
-        
-    </ul>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-75653347-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
-    <ul class="side-nav blue darken-1" id="category-menu">
-        <!--<li class="">
-            <h5 class="black-text">分类目录</h5>
-        </li>-->
 
+
+
+
+
+
+
+
+  
+  
     
+  
 
-            
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
 
-    </ul>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">lixy.space</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">lixy.space</p>
 </div>
 
-        </div>
-    </div>
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
 </nav>
 
-    <main>
-        
-
-<div class="slider">
-    <ul class="slides">
-    
-       <li>
-           <a href="/">
-               <img class="slider-image" src="http://lorempixel.com/580/250/nature/1">
-               <div class="caption center-align">
-                 <h4>This is our big Tagline!</h3>
-                 <h5 class="light grey-text text-lighten-3">Here&#39;s our small slogan.</h5>
-               </div>
-           </a>
-       </li>
-    
-       <li>
-           <a href="javascript:;">
-               <img class="slider-image" src="http://lorempixel.com/580/250/nature/2">
-               <div class="caption left-align">
-                 <h4>Left Aligned Caption</h3>
-                 <h5 class="light grey-text text-lighten-3">Here&#39;s our small slogan.</h5>
-               </div>
-           </a>
-       </li>
-    
-       <li>
-           <a href="javascript:;">
-               <img class="slider-image" src="http://lorempixel.com/580/250/nature/3">
-               <div class="caption right-align">
-                 <h4>Right Aligned Caption</h3>
-                 <h5 class="light grey-text text-lighten-3">Here&#39;s our small slogan.</h5>
-               </div>
-           </a>
-       </li>
-    
-   </ul>
  </div>
+    </header>
 
-
-
-<div id="article-list" class="container main-container">
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
     
-        <article class="simple-article">
-        <div class="card">
-            <div class="card-content">
-                <div class="article-title">
-                    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
     
-        <h1 class="indigo-link-context"><a href="/2016/03/27/mou/">Mou</a></h1>
-    
+      <header class="post-header">
 
-
-                </div>
-
-                <time class="orange-link-context" datetime="2016-03-27T12:00:34.000Z"><a href="/2016/03/27/mou/">2016-03-27</a></time>
-
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-    <div class="tags-row">
+                <a class="post-title-link" href="/2016/03/28/第一篇/" itemprop="url">
+                  Hi,friends
+                </a>
+              
+            
+          </h1>
         
-            <a href="/tags/test/" class="chip green accent-4">test</a>
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-28T12:42:00+08:00" content="2016-03-28">
+              2016-03-28
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/28/第一篇/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/28/第一篇/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
+          
+            <h2 id="zh-cn"><a href="#zh-cn" class="headerlink" title="zh-cn"></a>zh-cn</h2>
+          
+        
+      
     </div>
 
-
-
-                
-            </div>
-
-            
-        </div>
-</article>
-
-    
-        <article class="simple-article">
-        <div class="card">
-            <div class="card-content">
-                <div class="article-title">
-                    
-    
-        <h1 class="indigo-link-context"><a href="/2016/03/27/test/">test</a></h1>
-    
-
-
-                </div>
-
-                <time class="orange-link-context" datetime="2016-03-27T08:35:02.000Z"><a href="/2016/03/27/test/">2016-03-27</a></time>
-
-                
-    <div class="tags-row">
-        
-            <a href="/tags/test/" class="chip green accent-4">test</a>
-        
+    <div>
+      
     </div>
 
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
 
 
-                
-            </div>
+    
+      
 
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
             
-        </div>
-</article>
-
-    
-        <article class="simple-article">
-        <div class="card">
-            <div class="card-content">
-                <div class="article-title">
-                    
-    
-        <h1 class="indigo-link-context"><a href="/2016/03/27/hello-world/">Hello World</a></h1>
-    
-
-
-                </div>
-
-                <time class="orange-link-context" datetime="2016-03-27T03:35:00.000Z"><a href="/2016/03/27/hello-world/">2016-03-27</a></time>
-
-                
-
-
-                
-            </div>
-
             
+              
+                
+                <a class="post-title-link" href="/2016/03/27/mou/" itemprop="url">
+                  Mou
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-27T20:00:34+08:00" content="2016-03-27">
+              2016-03-27
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/27/mou/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/mou/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
         </div>
-</article>
-
+      </header>
     
 
-    <ul class="pagination center-align">
-    <li class="disabled">
-        <a href="/"><i class="fa fa-angle-left"></i></a>
-    </li>
-    
-    
-        <li class="active green"><a href="/">1</a></li>
-    
-    
-    <li class="disabled">
-        <a href="/"><i class="fa fa-angle-right"></i></a>
-    </li>
- </ul>
 
-</div>
+    <div class="post-body" itemprop="articleBody">
 
-        <div class="fixed-action-btn float-sitemap">
-    <a class="btn-floating btn-large green">
-      <i class="fa fa-caret-square-o-up"></i>
-    </a>
-    <ul>
-      <li><a class="btn-return-top btn-floating waves-effect blue" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
-      <li><a class="btn-floating waves-effect button-collapse orange"  data-activates="main-menu" title="菜单"><i class="fa fa-navicon"></i></a></li>
-    </ul>
+      
+      
+
+      
+        
+          <h1 id="Mou"><a href="#Mou" class="headerlink" title="Mou"></a>Mou</h1><p><img src="http://25.io/mou/Mou_128.png" alt="Mou icon"></p>
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p><strong>Mou</strong>, the missing Markdown editor for <em>web developers</em>.</p>
+<h3 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h3><h4 id="Strong-and-Emphasize"><a href="#Strong-and-Emphasize" class="headerlink" title="Strong and Emphasize"></a>Strong and Emphasize</h4><p><strong>strong</strong> or <strong>strong</strong> ( Cmd + B )</p>
+<p><em>emphasize</em> or <em>emphasize</em> ( Cmd + I )</p>
+<p><strong>Sometimes I want a lot of text to be bold.<br>Like, seriously, a <em>LOT</em> of text</strong></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/27/mou/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/27/test/" itemprop="url">
+                  test
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-27T16:35:02+08:00" content="2016-03-27">
+              2016-03-27
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/27/test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/test/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="这是一片测试文章"><a href="#这是一片测试文章" class="headerlink" title="这是一片测试文章"></a>这是一片测试文章</h1><ul>
+<li>引用内容<blockquote>
+<p>nfansudiohajbdflviaugdfviuyag</p>
+</blockquote>
+</li>
+<li>niadpfaseg</li>
+</ul>
+<p><img src="http://mouapp.com/Mou_128.png" alt="haid"></p>
+<h2 id="nviaasdiu"><a href="#nviaasdiu" class="headerlink" title="nviaasdiu"></a>nviaasdiu</h2><table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>‘ nihapajhdfih ‘</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/03/27/hello-world/" itemprop="url">
+                  Hello World
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-27T11:35:00+08:00" content="2016-03-27">
+              2016-03-27
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/27/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/27/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/27/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
   </div>
 
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/default_avatar.jpg"
+               alt="布氏程序猿" />
+          <p class="site-author-name" itemprop="name">布氏程序猿</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/suti/" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/u/3508980053" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> weibo
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/lixiangyu47" target="_blank">
+                  
+                    <i class="fa fa-globe"></i> zhihu
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        <div class="links-of-blogroll motion-element">
+          
+        </div>
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
     </main>
-    <footer class="page-footer blue darken-1">
-    
-    <div class="container">
-        <div class="row">
-            
-            <div class="social-group col m3 s12">
-                <h5 class="white-text">社交</h5>
-                
-                    <a class="social-link" href="http://weibo.com/u/3508980053" target="_blank">
-                        <i class="fa fa-2x fa-weibo"></i>
-                    </a>
-                
-                    <a class="social-link" href="https://github.com/suti" target="_blank">
-                        <i class="fa fa-2x fa-github"></i>
-                    </a>
-                
-            </div>
-            
 
-            
-            <div class="col m9 s12">
-                <h5 class="white-text">友情链接</h5>
-                
-                    <a class="social-link" href="http://fefine.xyz/" target="_blank">Fefine</a>
-                
-                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">raytaylorlin</a>
-                
-            </div>
-            
-        </div>
-    </div>
-    
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">布氏程序猿</span>
+</div>
 
-    <div class="footer-copyright orange-link-context">
-        <div class="container">
-            © 2016 www.lixy.space, All rights reserved.
-            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
-        </div>
-    </div>
-</footer>
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
 
-
-    <noscript>
-    <div class="noscript">
-        <p class="center-align">当前浏览器不支持博客完整功能。如果要获得最佳体验，请点击右上角···，复制链接，并在其它浏览器打开</p>
-    </div>
-</noscript>
-<div class="noscript">
-    <p class="center-align">当前浏览器不支持博客完整功能。如果要获得最佳体验，请点击右上角···，复制链接，并在其它浏览器打开</p>
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
 </div>
 
 
-<script src="/js/jquery-2.1.1.min.js"></script>
-<script src="/js/materialize.min.js"></script>
 
-<script>
-(function($) {
-    $(document).ready(function() {
-        // 隐藏禁用javascript（针对微信内置浏览器）的提示
-        $('.noscript').hide();
+      </div>
+    </footer>
 
-        // 图片缩放效果
-        var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
 
-        // 给图片加上点击放大效果（materialbox插件）
-        $imgs.addClass('materialboxed')
-            .each(function(i, el) {
-                $(this).attr('data-caption', $(this).attr('alt') || ' ');
-            }).materialbox();
-
-        // 首页幻灯片
-        $('.slider').slider({
-            indicators: true,
-            full_width: true,
-            interval: 8000
-        });
-
-        $(".button-collapse").sideNav();
-        $(".category-menu").sideNav();
-
-        // 针对gallery post
-        $('.carousel').carousel({
-            full_width: true
-        });
-        $('.carousel-control.prev').click(function() {
-            $('.carousel').carousel('prev');
-        });
-        $('.carousel-control.next').click(function() {
-            $('.carousel').carousel('next');
-        });
-
-        // 文章目录
-        $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
-        // 修正文章目录的left-border颜色
-        var color = $('.table-of-contents-text').css('color');
-        $('.table-of-contents-link').css('border-left-color', color);
-
-        // 针对移动端做的优化：FAB按钮点击一下收回
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            $('.fixed-action-btn').addClass('click-to-toggle');
-        }
-        // 回到顶部
-        $('.btn-return-top').click(function() {
-            $('body, html').animate({
-                scrollTop: 0
-            }, 500);
-        });
-
-        // 重置读书页面的Tab标签页的颜色
-        $('li.tab a').hover(function() {
-            $(this).toggleClass('text-lighten-4');
-        });
-        $('.indicator').addClass('green lighten-2');
-
-        
-        // 添加new标签
-        $('.menu-reading,.menu-about').append('<span class="new badge pink"></span>');
-        
-    });
-})(jQuery);
-</script>
+  
 
 
-<script src="/js/prettify.js"></script>
+  
+
+
+
+
 <script type="text/javascript">
-    $(document).ready(function() {
-        $("pre").addClass("prettyprint");
-        prettyPrint();
-    });
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
 </script>
 
 
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
-    ga('create', 'UA-75653347-1', 'auto');
-    ga('send', 'pageview');
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
-</script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
 
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
-<script type="text/javascript"
-    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+  
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"lixy"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
 
 </body>
 </html>
